@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="scss/normalize.css">
+    <link rel="stylesheet" href="scss/media.css">
     <!-- <link rel="icon" href="img/logo.svg"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="css/media.css"> -->
 </head>
 <body>
     <div class="container">
         <header class="header">
 
-            <button class="burger">
+            <button class="burger js-burger">
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
             </button>
 
-            <div class="logo">
+            <div class="logo logo--color">
                 <svg width="93" height="30" viewBox="0 0 93 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.3663 29H0.80625V0.999998H4.12625V26.04H17.3663V29ZM17.6541 15C17.6541 10.3333 18.6407 6.76 20.6141 4.28C22.5874 1.77333 25.4007 0.52 29.0541 0.52C31.0274 0.52 32.7341 0.866666 34.1741 1.56C35.6141 2.25333 36.8007 3.24 37.7341 4.52C38.6941 5.77333 39.4007 7.29333 39.8541 9.08C40.3074 10.84 40.5341 12.8133 40.5341 15C40.5341 19.6667 39.5341 23.2533 37.5341 25.76C35.5607 28.24 32.7341 29.48 29.0541 29.48C27.1074 29.48 25.4141 29.1333 23.9741 28.44C22.5607 27.7467 21.3741 26.7733 20.4141 25.52C19.4807 24.24 18.7874 22.72 18.3341 20.96C17.8807 19.1733 17.6541 17.1867 17.6541 15ZM21.1741 15C21.1741 16.5467 21.3207 18.0133 21.6141 19.4C21.9341 20.7867 22.4141 22.0133 23.0541 23.08C23.6941 24.12 24.5074 24.96 25.4941 25.6C26.5074 26.2133 27.6941 26.52 29.0541 26.52C31.5341 26.52 33.4807 25.5867 34.8941 23.72C36.3074 21.8267 37.0141 18.92 37.0141 15C37.0141 13.48 36.8541 12.0267 36.5341 10.64C36.2407 9.22667 35.7607 8 35.0941 6.96C34.4541 5.89333 33.6274 5.05333 32.6141 4.44C31.6274 3.8 30.4407 3.48 29.0541 3.48C26.6007 3.48 24.6674 4.42667 23.2541 6.32C21.8674 8.18667 21.1741 11.08 21.1741 15ZM55.5978 15.04H64.9978V27.36C64.5711 27.68 64.0511 27.9733 63.4378 28.24C62.8511 28.5067 62.2111 28.7333 61.5178 28.92C60.8511 29.1067 60.1445 29.24 59.3978 29.32C58.6778 29.4267 57.9711 29.48 57.2778 29.48C55.4911 29.48 53.8511 29.2 52.3578 28.64C50.8645 28.0533 49.5711 27.1733 48.4778 26C47.3845 24.8 46.5311 23.2933 45.9178 21.48C45.3045 19.64 44.9978 17.48 44.9978 15C44.9978 12.4133 45.3711 10.2 46.1178 8.36C46.8645 6.52 47.8378 5.02667 49.0378 3.88C50.2378 2.70667 51.5845 1.85333 53.0778 1.32C54.5711 0.786666 56.0645 0.52 57.5578 0.52C59.1578 0.52 60.4778 0.613332 61.5178 0.799998C62.5578 0.959998 63.4378 1.18666 64.1578 1.48L63.3178 4.4C62.0378 3.78667 60.2111 3.48 57.8378 3.48C56.7178 3.48 55.5978 3.68 54.4778 4.08C53.3845 4.45333 52.3978 5.09333 51.5178 6C50.6378 6.90667 49.9178 8.09333 49.3578 9.56C48.7978 11.0267 48.5178 12.84 48.5178 15C48.5178 16.9733 48.7445 18.68 49.1978 20.12C49.6511 21.56 50.2778 22.76 51.0778 23.72C51.9045 24.6533 52.8911 25.36 54.0378 25.84C55.1845 26.2933 56.4378 26.52 57.7978 26.52C59.5045 26.52 60.9578 26.1867 62.1578 25.52V17.72L55.5978 16.92V15.04ZM69.49 15C69.49 10.3333 70.4767 6.76 72.45 4.28C74.4233 1.77333 77.2367 0.52 80.89 0.52C82.8633 0.52 84.57 0.866666 86.01 1.56C87.45 2.25333 88.6367 3.24 89.57 4.52C90.53 5.77333 91.2367 7.29333 91.69 9.08C92.1433 10.84 92.37 12.8133 92.37 15C92.37 19.6667 91.37 23.2533 89.37 25.76C87.3967 28.24 84.57 29.48 80.89 29.48C78.9433 29.48 77.25 29.1333 75.81 28.44C74.3967 27.7467 73.21 26.7733 72.25 25.52C71.3167 24.24 70.6233 22.72 70.17 20.96C69.7167 19.1733 69.49 17.1867 69.49 15ZM73.01 15C73.01 16.5467 73.1567 18.0133 73.45 19.4C73.77 20.7867 74.25 22.0133 74.89 23.08C75.53 24.12 76.3433 24.96 77.33 25.6C78.3433 26.2133 79.53 26.52 80.89 26.52C83.37 26.52 85.3167 25.5867 86.73 23.72C88.1433 21.8267 88.85 18.92 88.85 15C88.85 13.48 88.69 12.0267 88.37 10.64C88.0767 9.22667 87.5967 8 86.93 6.96C86.29 5.89333 85.4633 5.05333 84.45 4.44C83.4633 3.8 82.2767 3.48 80.89 3.48C78.4367 3.48 76.5033 4.42667 75.09 6.32C73.7033 8.18667 73.01 11.08 73.01 15Z" fill="#417A82"/>
                 </svg>
@@ -33,18 +35,75 @@
                 <span class="basket__quantity"></span>
             </div>
 
-            <ul class="header__list">
-                <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item1.svg" alt=""></a></li>
-                <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item2.svg" alt=""></li>
-                <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item3.svg" alt=""></a></li>
-                <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item4.svg" alt=""></a></li>
-                <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item5.svg" alt=""></a></li>
-                <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item6.svg" alt=""></a></li>
-                <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item7.svg" alt=""></a></li>
-                <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item8.svg" alt=""></a></li>
-                <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item9.svg" alt=""></a></li>
-                <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item10.svg" alt=""></a></li>
-            </ul>
+            <nav class="header__nav">
+                <ul class="header__list list">
+                    <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item1.svg" alt=""></a></li>
+                    <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item2.svg" alt=""></li>
+                    <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item3.svg" alt=""></a></li>
+                    <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item4.svg" alt=""></a></li>
+                    <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item5.svg" alt=""></a></li>
+                    <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item6.svg" alt=""></a></li>
+                    <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item7.svg" alt=""></a></li>
+                    <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item8.svg" alt=""></a></li>
+                    <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item9.svg" alt=""></a></li>
+                    <li class="header__item"><a href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item10.svg" alt=""></a></li>
+                </ul>
+            </nav>
+
+            <div class="search">
+                <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="7" cy="7" r="6.5" transform="matrix(-1 0 0 1 14 0)" stroke="#417A82"/>
+                    <path d="M12.5 14L16 18.5" stroke="#417A82"/>
+                </svg>
+            </div>
+
+            <div class="header__menu js-header-menu customScroll" data-simplebar>
+
+                <!-- <div> -->
+                <div class="logo">
+                    <svg width="93" height="30" viewBox="0 0 93 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3663 29H0.80625V0.999998H4.12625V26.04H17.3663V29ZM17.6541 15C17.6541 10.3333 18.6407 6.76 20.6141 4.28C22.5874 1.77333 25.4007 0.52 29.0541 0.52C31.0274 0.52 32.7341 0.866666 34.1741 1.56C35.6141 2.25333 36.8007 3.24 37.7341 4.52C38.6941 5.77333 39.4007 7.29333 39.8541 9.08C40.3074 10.84 40.5341 12.8133 40.5341 15C40.5341 19.6667 39.5341 23.2533 37.5341 25.76C35.5607 28.24 32.7341 29.48 29.0541 29.48C27.1074 29.48 25.4141 29.1333 23.9741 28.44C22.5607 27.7467 21.3741 26.7733 20.4141 25.52C19.4807 24.24 18.7874 22.72 18.3341 20.96C17.8807 19.1733 17.6541 17.1867 17.6541 15ZM21.1741 15C21.1741 16.5467 21.3207 18.0133 21.6141 19.4C21.9341 20.7867 22.4141 22.0133 23.0541 23.08C23.6941 24.12 24.5074 24.96 25.4941 25.6C26.5074 26.2133 27.6941 26.52 29.0541 26.52C31.5341 26.52 33.4807 25.5867 34.8941 23.72C36.3074 21.8267 37.0141 18.92 37.0141 15C37.0141 13.48 36.8541 12.0267 36.5341 10.64C36.2407 9.22667 35.7607 8 35.0941 6.96C34.4541 5.89333 33.6274 5.05333 32.6141 4.44C31.6274 3.8 30.4407 3.48 29.0541 3.48C26.6007 3.48 24.6674 4.42667 23.2541 6.32C21.8674 8.18667 21.1741 11.08 21.1741 15ZM55.5978 15.04H64.9978V27.36C64.5711 27.68 64.0511 27.9733 63.4378 28.24C62.8511 28.5067 62.2111 28.7333 61.5178 28.92C60.8511 29.1067 60.1445 29.24 59.3978 29.32C58.6778 29.4267 57.9711 29.48 57.2778 29.48C55.4911 29.48 53.8511 29.2 52.3578 28.64C50.8645 28.0533 49.5711 27.1733 48.4778 26C47.3845 24.8 46.5311 23.2933 45.9178 21.48C45.3045 19.64 44.9978 17.48 44.9978 15C44.9978 12.4133 45.3711 10.2 46.1178 8.36C46.8645 6.52 47.8378 5.02667 49.0378 3.88C50.2378 2.70667 51.5845 1.85333 53.0778 1.32C54.5711 0.786666 56.0645 0.52 57.5578 0.52C59.1578 0.52 60.4778 0.613332 61.5178 0.799998C62.5578 0.959998 63.4378 1.18666 64.1578 1.48L63.3178 4.4C62.0378 3.78667 60.2111 3.48 57.8378 3.48C56.7178 3.48 55.5978 3.68 54.4778 4.08C53.3845 4.45333 52.3978 5.09333 51.5178 6C50.6378 6.90667 49.9178 8.09333 49.3578 9.56C48.7978 11.0267 48.5178 12.84 48.5178 15C48.5178 16.9733 48.7445 18.68 49.1978 20.12C49.6511 21.56 50.2778 22.76 51.0778 23.72C51.9045 24.6533 52.8911 25.36 54.0378 25.84C55.1845 26.2933 56.4378 26.52 57.7978 26.52C59.5045 26.52 60.9578 26.1867 62.1578 25.52V17.72L55.5978 16.92V15.04ZM69.49 15C69.49 10.3333 70.4767 6.76 72.45 4.28C74.4233 1.77333 77.2367 0.52 80.89 0.52C82.8633 0.52 84.57 0.866666 86.01 1.56C87.45 2.25333 88.6367 3.24 89.57 4.52C90.53 5.77333 91.2367 7.29333 91.69 9.08C92.1433 10.84 92.37 12.8133 92.37 15C92.37 19.6667 91.37 23.2533 89.37 25.76C87.3967 28.24 84.57 29.48 80.89 29.48C78.9433 29.48 77.25 29.1333 75.81 28.44C74.3967 27.7467 73.21 26.7733 72.25 25.52C71.3167 24.24 70.6233 22.72 70.17 20.96C69.7167 19.1733 69.49 17.1867 69.49 15ZM73.01 15C73.01 16.5467 73.1567 18.0133 73.45 19.4C73.77 20.7867 74.25 22.0133 74.89 23.08C75.53 24.12 76.3433 24.96 77.33 25.6C78.3433 26.2133 79.53 26.52 80.89 26.52C83.37 26.52 85.3167 25.5867 86.73 23.72C88.1433 21.8267 88.85 18.92 88.85 15C88.85 13.48 88.69 12.0267 88.37 10.64C88.0767 9.22667 87.5967 8 86.93 6.96C86.29 5.89333 85.4633 5.05333 84.45 4.44C83.4633 3.8 82.2767 3.48 80.89 3.48C78.4367 3.48 76.5033 4.42667 75.09 6.32C73.7033 8.18667 73.01 11.08 73.01 15Z" fill="#417A82"/>
+                    </svg>
+                </div>
+
+                <button class="button button--close"></button>
+
+                <div class="header__contact">
+                    <span class="header__contact-name">Дмитров</span>
+                    <a class="header__number" href="tel:89256455711">8 (925) 645-57-11</a>
+                    <a class="header__number" href="tel:84999999999">8 (499) 999-99-99</a>
+                </div>
+
+                <nav class="header__nav">
+                    <ul class="header__list list">
+                        <li class="header__item"><a class="header__link" href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item1.svg" alt=""><span>Lorem</span></a></li>
+                        <li class="header__item"><a class="header__link" href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item2.svg" alt=""><span>Lorem</span></a></li>
+                        <li class="header__item"><a class="header__link" href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item3.svg" alt=""><span>Lorem</span></a></li>
+                        <li class="header__item"><a class="header__link" href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item4.svg" alt=""><span>Lorem</span></a></li>
+                        <li class="header__item"><a class="header__link" href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item5.svg" alt=""><span>Lorem</span></a></li>
+                        <li class="header__item"><a class="header__link" href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item6.svg" alt=""><span>Lorem</span></a></li>
+                        <li class="header__item"><a class="header__link" href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item7.svg" alt=""><span>Lorem</span></a></li>
+                        <li class="header__item"><a class="header__link" href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item8.svg" alt=""><span>Lorem</span></a></li>
+                        <li class="header__item"><a class="header__link" href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item9.svg" alt=""><span>Lorem</span></a></li>
+                        <li class="header__item"><a class="header__link" href="javascript:void(0);" title="" aria-label=""><img src="img/svg/header-item10.svg" alt=""><span>Калькулятор</span></a></li>
+                    </ul>
+                </nav>
+
+                <form class="form" method="post">
+                    <input class="input input--search" type="search" placeholder="Поиск">
+                </form>
+
+                <nav class="navigation navigation--about-us">
+                    <ul class="list">
+                        <li class="navigation__item"><a class="navigation__link" href="javascript:volid(0);">О&nbsp;компании</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="javascript:volid(0);">Отзывы</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="javascript:volid(0);">Коммерческим покупателям</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="javascript:volid(0);">Контакты</a></li>
+                    </ul>
+                </nav>
+                <!-- </div> -->
+
+            </div>
 
         </header>
     </div>
@@ -54,7 +113,7 @@
             <div class="hero__inner swiper js-swiper-hero">
                 <div class="hero__wrapper swiper-wrapper">
                     <div class="swiper-slide">
-                        <picture class="hero__picture picture">
+                        <picture class="picture--hero picture">
                             <source type="image/jpeg" srcset="img/intro/intro-slide-375.jpg" media="(max-width: 768px)">
                             <source type="image/webp" srcset="img/intro/intro-slide-375.webp" media="(max-width: 768px)">
                             <source type="image/jpeg" srcset="img/intro/intro-slide-1440.jpg" media="(max-width: 768px)">
@@ -66,7 +125,7 @@
                             <p class="hero__content content">&laquo;Lorem&raquo;&nbsp;&mdash; производитель изделий для внутренней и&nbsp;внешней lorem</p>
                             <button class="button">КАЛЬКУЛЯТОР</button>
                         </div>
-                        <div class="hero__flex">
+                        <div class="hero__flex flex">
                             <button class="button button--color">ЗАКАЗАТЬ РАЗМЕР</button>
                             <div class="hero__wrapper-basket">
                                 <div class="basket basket--hero" aria-label="">
@@ -78,7 +137,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <picture class="hero__picture picture">
+                        <picture class="picture--hero picture">
                             <source type="image/jpeg" srcset="img/intro/intro-slide-375.jpg" media="(max-width: 768px)">
                             <source type="image/webp" srcset="img/intro/intro-slide-375.webp" media="(max-width: 768px)">
                             <source type="image/jpeg" srcset="img/intro/intro-slide-1440.jpg" media="(max-width: 768px)">
@@ -92,7 +151,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <picture class="hero__picture picture">
+                        <picture class="picture--hero picture">
                             <source type="image/jpeg" srcset="img/intro/intro-slide-375.jpg" media="(max-width: 768px)">
                             <source type="image/webp" srcset="img/intro/intro-slide-375.webp" media="(max-width: 768px)">
                             <source type="image/jpeg" srcset="img/intro/intro-slide-1440.jpg" media="(max-width: 2400px)">
@@ -111,6 +170,7 @@
         </section>
 
         <section class="popular">
+            <div class="container">
                 <div class="popular__wrapper">
                     <h2 class="title title--h2">Популярное</h2>
                     <div class="popular__inner">
@@ -127,7 +187,7 @@
                                 <p class="popular__content content"> МОСКИТНЫЕ <span>СЕТКИ</span></p>
                             </a>
 
-                            <div class="popular__flex">
+                            <div class="flex">
                                 <a class="popular__card" href="javascript:void(0);" title="" aria-label="">
                                     <picture class="picture">
                                         <source type="image/jpeg" srcset="img/popular/popular-375-3.jpg" media="(max-width: 768px)">
@@ -170,34 +230,633 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section class="best">
             <div class="container">
                 <h3 class="title title--h3">ЛУЧШИЕ ПРЕДЛОЖЕНИЯ</h3>
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <ul>
-                                <li>
-                                    <picture class="hero__picture picture">
-                                        <source type="image/jpeg" srcset="img/best/best-1.jpg" media="(max-width: 2400px)">
-                                        <source type="image/webp" srcset="img/best/best-1.webp" media="(max-width: 2400px)">
-                                        <img src="img/best/best-1.jpg" alt="">
-                                    </picture>
-                                </li>
+                <div class="best__swiper swiper js-swiper-best">
+                    <ul class="swiper-wrapper best__list list">
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-1.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-1.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-1.jpg" alt="">
+                            </picture>
 
-                                <li></li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            
-                        </div>
-                        <div class="swiper-slide">
-                            
-                        </div>
+                            <div class="best__discount">
+                                <span class="best__circle"></span>
+                                <img class="best__svg" src="img/svg/best-icon-100.svg" alt="">
+                                <img class="best__svg" src="img/svg/best-icon-230.svg" alt="">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Вертикальные жалюзи &laquo;Lorem&raquo;</p>
+
+                                <div class="best__card-bottom">
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">1200₽</span>
+                                        <span class="best__price">1000₽</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-2.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-2.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-2.jpg" alt="">
+                            </picture>
+
+                            <div class="best__discount">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Вертикальные жалюзи &laquo;Lorem&raquo;. Длинное название в&nbsp;три строчки</p>
+
+                                <div class="best__card-bottom">
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">1200Р</span>
+                                        <span class="best__price">1000Р</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-3.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-3.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-3.jpg" alt="">
+                            </picture>
+
+                            <div class="best__discount">
+                                <span class="best__circle"></span>
+                                <img class="best__svg" src="img/svg/best-icon-100.svg" alt="">
+                                <img class="best__svg" src="img/svg/best-icon-230.svg" alt="">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Вертикальные жалюзи &laquo;Lorem&raquo;</p>
+
+                                <div class="best__card-bottom">
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">8000₽</span>
+                                        <span class="best__price">10099₽</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-4.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-4.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-4.jpg" alt="">
+                            </picture>
+
+                            <div class="best__discount">
+                                <span class="best__circle"></span>
+                                <img class="best__svg" src="img/svg/best-icon-100.svg" alt="">
+                                <img class="best__svg" src="img/svg/best-icon-230.svg" alt="">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Короткое название</p>
+
+                                <div class="best__card-bottom">
+
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">1200₽</span>
+                                        <span class="best__price">1000₽</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-1.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-1.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-1.jpg" alt="">
+                            </picture>
+
+                            <div class="best__discount">
+                                <span class="best__circle"></span>
+                                <img class="best__svg" src="img/svg/best-icon-100.svg" alt="">
+                                <img class="best__svg" src="img/svg/best-icon-230.svg" alt="">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Вертикальные жалюзи &laquo;Lorem&raquo;</p>
+
+                                <div class="best__card-bottom">
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">1200₽</span>
+                                        <span class="best__price">1000₽</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-2.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-2.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-2.jpg" alt="">
+                            </picture>
+
+                            <div class="best__discount">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Вертикальные жалюзи &laquo;Lorem&raquo;. Длинное название в&nbsp;три строчки</p>
+
+                                <div class="best__card-bottom">
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">1200Р</span>
+                                        <span class="best__price">1000Р</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-3.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-3.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-3.jpg" alt="">
+                            </picture>
+
+                            <div class="best__discount">
+                                <span class="best__circle"></span>
+                                <img class="best__svg" src="img/svg/best-icon-100.svg" alt="">
+                                <img class="best__svg" src="img/svg/best-icon-230.svg" alt="">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Вертикальные жалюзи &laquo;Lorem&raquo;</p>
+
+                                <div class="best__card-bottom">
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">8000₽</span>
+                                        <span class="best__price">10099₽</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-4.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-4.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-4.jpg" alt="">
+                            </picture>
+
+                            <div class="best__discount">
+                                <span class="best__circle"></span>
+                                <img class="best__svg" src="img/svg/best-icon-100.svg" alt="">
+                                <img class="best__svg" src="img/svg/best-icon-230.svg" alt="">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Короткое название</p>
+
+                                <div class="best__card-bottom">
+
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">1200₽</span>
+                                        <span class="best__price">1000₽</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-1.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-1.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-1.jpg" alt="">
+                            </picture>
+
+                            <div class="best__discount">
+                                <span class="best__circle"></span>
+                                <img class="best__svg" src="img/svg/best-icon-100.svg" alt="">
+                                <img class="best__svg" src="img/svg/best-icon-230.svg" alt="">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Вертикальные жалюзи &laquo;Lorem&raquo;</p>
+
+                                <div class="best__card-bottom">
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">1200₽</span>
+                                        <span class="best__price">1000₽</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-2.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-2.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-2.jpg" alt="">
+                            </picture>
+
+                            <div class="best__discount">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Вертикальные жалюзи &laquo;Lorem&raquo;. Длинное название в&nbsp;три строчки</p>
+
+                                <div class="best__card-bottom">
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">1200Р</span>
+                                        <span class="best__price">1000Р</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-3.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-3.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-3.jpg" alt="">
+                            </picture>
+
+                            <div class="best__discount">
+                                <span class="best__circle"></span>
+                                <img class="best__svg" src="img/svg/best-icon-100.svg" alt="">
+                                <img class="best__svg" src="img/svg/best-icon-230.svg" alt="">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Вертикальные жалюзи &laquo;Lorem&raquo;</p>
+
+                                <div class="best__card-bottom">
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">8000₽</span>
+                                        <span class="best__price">10099₽</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide best__item">
+                            <picture class="picture picture--best">
+                                <source type="image/jpeg" srcset="img/best/best-4.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/best/best-4.webp" media="(max-width: 2400px)">
+                                <img src="img/best/best-4.jpg" alt="">
+                            </picture>
+
+                            <div class="best__discount">
+                                <span class="best__circle"></span>
+                                <img class="best__svg" src="img/svg/best-icon-100.svg" alt="">
+                                <img class="best__svg" src="img/svg/best-icon-230.svg" alt="">
+
+                                <span class="best__discount-circle"></span>
+
+                            </div>
+
+                            <div class="best__price-wrapper">
+                                <p class="best__content content">Короткое название</p>
+
+                                <div class="best__card-bottom">
+
+                                    <div class="best__application">
+                                        <span class="best__price">от</span>
+                                        <span class="best__price">1200₽</span>
+                                        <span class="best__price">1000₽</span>
+                                    </div>
+
+                                    <div class="flex">
+                                        <button class="button button--border">ОФОРМИТЬ ЗАЯВКУ</button>
+
+                                        <div class="basket basket--best" aria-label="">
+                                            <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9149 5.15805H28L26.2128 15.2645H10.7234L5.95745 0.996582H0" stroke="#417A82" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="best__pagination">
+                        <div class="swiper-button-prev best__button-prev"></div>
+                        <div class="swiper-button-next best__button-next"></div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="choice">
+            <div class="container">
+                <div class="choice__wrapper">
+                    <form class="choice__form" method="post">
+                        <fieldset class="choice__fieldset">
+                            <legend class="choice__legend">ВАШ ПОМОЩНИК В&nbsp;ВЫБОРЕ СОЛНЦЕЗАЩИТЫ</legend>
+
+                            <h3 class="title title--h3 title--choice">Для какого помещения выбираете Lorem?</h3>
+
+                            <div class="choice__wrapper-tabs js-wrapper-tabs">
+                                <div class="choice__tabs">
+                                    <button class="button button--tabs js-tabs active" data-tabs-path="1" type="button">1</button>
+                                    <button class="button button--tabs js-tabs" data-tabs-path="2" type="button">2</button>
+                                    <button class="button button--tabs js-tabs" data-tabs-path="3" type="button">3</button>
+                                </div>
+
+                                <div class="choice__wrapper-input">
+                                    <ul class=" list choice__list js-tabs-content active" data-tabs-target="1">
+                                        <li><label for ="check1" class="choice__label content"><input class="choice__input" id="check1" type="checkbox">Веранда, терраса, уличное пространство<span></span></label></li>
+                                        <li><label for ="check2" class="choice__label content"><input class="choice__input" id="check2" type="checkbox">Офис<span></span></label></li>
+                                        <li><label for ="check3" class="choice__label content"><input class="choice__input" id="check3" type="checkbox">Учебное или мед. учреждение<span></span></label></li>
+                                        <li><label for ="check4" class="choice__label content"><input class="choice__input" id="check4" type="checkbox">Помещение с&nbsp;проектором<span></span></label></li>
+                                        <li><label for ="check5" class="choice__label content"><input class="choice__input" id="check5" type="checkbox">Стеклянные переговорные<span></span></label></li>
+                                        <li><label for ="check6" class="choice__label content"><input class="choice__input" id="check6" type="checkbox">Помещение с&nbsp;панорамными окнами<span></span></label></li>
+                                        <li><label for ="check7" class="choice__label content"><input class="choice__input" id="check7" type="checkbox">Помещение с&nbsp;мансардными окнами<span></span></label></li>
+                                        <li><label for ="check8" class="choice__label content"><input class="choice__input" id="check8" type="checkbox">Кухня, столовая<span></span></label></li>
+                                        <li><label for ="check9" class="choice__label content"><input class="choice__input" id="check9" type="checkbox">Детская<span></span></label></li>
+                                        <li><label for ="check10" class="choice__label content"><input class="choice__input" id="check10" type="checkbox">Спальня<span></span></label></li>
+                                        <li><label for ="check11" class="choice__label content"><input class="choice__input" id="check11" type="checkbox">Балкон<span></span></label></li>
+                                        <li><label for ="check12" class="choice__label content"><input class="choice__input" id="check12" type="checkbox">Зимний сад<span></span></label></li>
+                                    </ul>
+
+                                    <ul class=" list choice__list js-tabs-content" data-tabs-target="2">
+                                        <li><label for ="check13" class="choice__label content"><input class="choice__input" id="check13" type="checkbox">Офис<span></span></label></li>
+                                        <li><label for ="check14" class="choice__label content"><input class="choice__input" id="check14" type="checkbox">Веранда, терраса, уличное пространство<span></span></label></li>
+                                        <li><label for ="check15" class="choice__label content"><input class="choice__input" id="check15" type="checkbox">Учебное или мед. учреждение<span></span></label></li>
+                                        <li><label for ="check16" class="choice__label content"><input class="choice__input" id="check16" type="checkbox">Помещение с&nbsp;проектором<span></span></label></li>
+                                        <li><label for ="check17" class="choice__label content"><input class="choice__input" id="check17" type="checkbox">Стеклянные переговорные<span></span></label></li>
+                                        <li><label for ="check18" class="choice__label content"><input class="choice__input" id="check18" type="checkbox">Помещение с&nbsp;панорамными окнами<span></span></label></li>
+                                        <li><label for ="check19" class="choice__label content"><input class="choice__input" id="check19" type="checkbox">Помещение с&nbsp;мансардными окнами<span></span></label></li>
+                                        <li><label for ="check20" class="choice__label content"><input class="choice__input" id="check20" type="checkbox">Кухня, столовая<span></span></label></li>
+                                        <li><label for ="check21" class="choice__label content"><input class="choice__input" id="check21" type="checkbox">Детская<span></span></label></li>
+                                        <li><label for ="check22" class="choice__label content"><input class="choice__input" id="check22" type="checkbox">Спальня<span></span></label></li>
+                                        <li><label for ="check23" class="choice__label content"><input class="choice__input" id="check23" type="checkbox">Балкон<span></span></label></li>
+                                        <li><label for ="check24" class="choice__label content"><input class="choice__input" id="check24" type="checkbox">Зимний сад<span></span></label></li>
+                                    </ul>
+
+                                    <ul class=" list choice__list js-tabs-content" data-tabs-target="3">
+                                        <li><label for ="check25" class="choice__label content"><input class="choice__input" id="check25" type="checkbox">Помещение с&nbsp;панорамными окнами<span></span></label></li>
+                                        <li><label for ="check26" class="choice__label content"><input class="choice__input" id="check26" type="checkbox">Офис<span></span></label></li>
+                                        <li><label for ="check27" class="choice__label content"><input class="choice__input" id="check27" type="checkbox">Учебное или мед. учреждение<span></span></label></li>
+                                        <li><label for ="check28" class="choice__label content"><input class="choice__input" id="check28" type="checkbox">Помещение с&nbsp;проектором<span></span></label></li>
+                                        <li><label for ="check29" class="choice__label content"><input class="choice__input" id="check29" type="checkbox">Стеклянные переговорные<span></span></label></li>
+                                        <li><label for ="check30" class="choice__label content"><input class="choice__input" id="check30" type="checkbox">Веранда, терраса, уличное пространство<span></span></label></li>
+                                        <li><label for ="check31" class="choice__label content"><input class="choice__input" id="check31" type="checkbox">Помещение с&nbsp;мансардными окнами<span></span></label></li>
+                                        <li><label for ="check32" class="choice__label content"><input class="choice__input" id="check32" type="checkbox">Кухня, столовая<span></span></label></li>
+                                        <li><label for ="check33" class="choice__label content"><input class="choice__input" id="check33" type="checkbox">Детская<span></span></label></li>
+                                        <li><label for ="check34" class="choice__label content"><input class="choice__input" id="check34" type="checkbox">Спальня<span></span></label></li>
+                                        <li><label for ="check35" class="choice__label content"><input class="choice__input" id="check35" type="checkbox">Балкон<span></span></label></li>
+                                        <li><label for ="check36" class="choice__label content"><input class="choice__input" id="check36" type="checkbox">Зимний сад<span></span></label></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="button button--next">ДАЛЕЕ</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+
+                <h2 class="title title--h2 title--catalog">Каталог</h2>
+                <h3 class="title title--h3 title--color">КАТАЛОГ ПРОДУКЦИИ</h3>
+                <!-- <div class="catalog__wrapper"> -->
+                    <div class="catalog__wrapper-top">
+
+                        <div class="catalog__product-card">
+                            <picture class="picture">
+                                <source type="image/jpeg" srcset="img/catalog/catalog-1-375.jpg" media="(max-width: 768px)">
+                                <source type="image/webp" srcset="img/catalog/catalog-1-375.webp" media="(max-width: 768px)">
+                                <source type="image/jpeg" srcset="img/catalog/catalog-1-1440.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/catalog/catalog-1-1440.webp" media="(max-width: 2400px)">
+                                <img src="img/catalog/catalog-1-1440.jpg" alt="">
+                            </picture>
+                            <span class="catalog__card-name">LOREM</span>
+                        </div>
+                        <div class="catalog__product-card">
+                            <picture class=" picture">
+                                <source type="image/jpeg" srcset="img/catalog/catalog-2-375.jpg" media="(max-width: 768px)">
+                                <source type="image/webp" srcset="img/catalog/catalog-2-375.webp" media="(max-width: 768px)">
+                                <source type="image/jpeg" srcset="img/catalog/catalog-2-1440.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/catalog/catalog-2-1440.webp" media="(max-width: 2400px)">
+                                <img src="img/catalog/catalog-2-1440.jpg" alt="">
+                            </picture>
+                            <span class="catalog__card-name">LOREM</span>
+                        </div>
+
+                        <div class="catalog__product-card">
+                            <picture class="picture">
+                                <source type="image/jpeg" srcset="img/catalog/catalog-3-375.jpg" media="(max-width: 768px)">
+                                <source type="image/webp" srcset="img/catalog/catalog-3-375.webp" media="(max-width: 768px)">
+                                <source type="image/jpeg" srcset="img/catalog/catalog-3-1440.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/catalog/catalog-3-1440.webp" media="(max-width: 2400px)">
+                                <img src="img/catalog/catalog-3-1440.jpg" alt="">
+                            </picture>
+                            <span class="catalog__card-name">LOREM</span>
+                        </div>
+
+                    </div>
+
+                    <div class="catalog__wrapper-bottom-left">
+                        <div class="catalog__product-price">
+                            <picture class="picture picture--catalog">
+                                <source type="image/jpeg" srcset="img/catalog/catalog-card-1.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/catalog/catalog-card-1.webp" media="(max-width: 2400px)">
+                                <img src="img/catalog/catalog-card-1.jpg" alt="">
+                            </picture>
+                            <span class="catalog__product-name">LOREM</span>
+                            <span class="catalog__product-info">от&nbsp;100₽</span>
+                        </div>
+                        <div class="catalog__product-price">
+                            <picture class="picture picture--catalog">
+                                <source type="image/jpeg" srcset="img/catalog/catalog-card-2.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/catalog/catalog-card-2.webp" media="(max-width: 2400px)">
+                                <img src="img/catalog/catalog-card-2.jpg" alt="">
+                            </picture>
+                            <span class="catalog__product-name">LOREM</span>
+                            <span class="catalog__product-info">от&nbsp;100₽</span>
+                        </div>
+                        <div class="catalog__product-price">
+                            <picture class="picture picture--catalog">
+                                <source type="image/jpeg" srcset="img/catalog/catalog-card-3.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/catalog/catalog-card-3.webp" media="(max-width: 2400px)">
+                                <img src="img/catalog/catalog-card-3.jpg" alt="">
+                            </picture>
+                            <span class="catalog__product-name">LOREM</span>
+                            <span class="catalog__product-info">от&nbsp;100₽</span></div>
+
+                        <div class="catalog__product-price">
+                            <picture class="picture  picture--catalog">
+                                <source type="image/jpeg" srcset="img/catalog/catalog-card-4.jpg" media="(max-width: 2400px)">
+                                <source type="image/webp" srcset="img/catalog/catalog-card-4.webp" media="(max-width: 2400px)">
+                                <img src="img/catalog/catalog-card-4.jpg" alt="">
+                            </picture>
+                            <span class="catalog__product-name">LOREM</span>
+                            <span class="catalog__product-info">от&nbsp;100₽</span>
+                        </div>
+                    </div>
+                <!-- </div> -->
             </div>
         </section>
 
@@ -205,6 +864,7 @@
     <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script> -->
     <script src="js/index.js"></script>
 
 </body>
